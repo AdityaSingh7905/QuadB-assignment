@@ -1,86 +1,119 @@
-📝 To-Do App
-A simple and intuitive To-Do app that allows users to add, delete, mark as completed and/or important, and categorize tasks for better task management. The app also provides a built-in weather feature that displays the current temperature at the user's location.
+# 📋 To-Do App
 
-🚀 Tech Stack:
-Frontend: React.js, Next.js
-Backend: Node.js, Express.js, REST APIs, MongoDB (Mongoose)
-Authentication: JWT Tokens
-Additional Features: OpenWeather API, Dark/Light Mode Toggle
+A simple and intuitive To-Do app that allows users to efficiently manage their tasks with features like adding, deleting, marking as completed or important, and categorizing tasks. The app also integrates a weather feature that displays the current temperature at the user's location.
 
-✨ Features
+## 🚀 Tech Stack
 
-✅ Task Management:
-Add tasks with date & time
-Mark tasks as completed or important
-Delete specific tasks
+- **Frontend:** React.js, Next.js  
+- **Backend:** Node.js, Express.js, REST APIs, MongoDB (Mongoose)  
+- **Authentication:** JWT Tokens  
+- **Additional Features:** OpenWeather API, Dark/Light Mode Toggle  
 
-✅ Sidebar Sections:
-📋 All Tasks – View all tasks
-📅 Today – View tasks due today
-⭐ Important – View only important tasks
-🗓️ Planned – View future tasks
-✅ Completed – View finished tasks
+## ✨ Features
 
-✅ User Authentication:
-Simple JWT-based authentication
-Secure login and signup
+### ✅ Task Management
+- Add tasks with date & time
+- Mark tasks as completed or important
+- Delete specific tasks
 
-✅ Weather Integration:
-Uses OpenWeather API to display the current temperature and weather data
-Requires location access for accurate weather data
+### ✅ Sidebar Sections
+- 📋 **All Tasks** – View all tasks
+- 📅 **Today** – View tasks due today
+- ⭐ **Important** – View only important tasks
+- 🗓️ **Planned** – View future tasks
+- ✅ **Completed** – View finished tasks
 
-✅ Theming:
-Light & Dark Mode toggle for a better user experience
+### ✅ User Authentication
+- Simple JWT-based authentication
+- Secure login and signup
 
-🛠️ Installation & Setup
-1️⃣ Clone the Repository
-git clone [https://github.com/AdityaSingh7905/QuadB-assignment]
-cd todo-app
+### ✅ Weather Integration
+- Uses **OpenWeather API** to display the current temperature and weather data
+- Requires location access for accurate weather data
 
-2️⃣ Install Dependencies
-Backend (Node.js, Express, MongoDB)
+### ✅ Theming
+- **Light & Dark Mode** toggle for a better user experience
+
+---
+
+## 🛠️ Installation & Setup
+
+1. **Clone the Repository**
+```bash
+git clone https://github.com/AdityaSingh7905/QuadB-assignment
+dd todo-app
+```
+
+2. **Install Dependencies**
+
+**Backend (Node.js, Express, MongoDB)**
+```bash
 cd backend
 npm install
+```
 
-Frontend (React.js, Next.js)
+**Frontend (React.js, Next.js)**
+```bash
 cd frontend
 npm install
+```
 
-3️⃣ Environment Variables
-Create a .env file in the backend directory and add:
+3. **Environment Variables**
+
+Create a `.env` file in the **backend** directory and add:
+```
 PORT=8000
 MONGO_URI=your_mongodb_connection_string
 JWT_SECRET=your_secret_key
+```
 
-Create a .env.local file in the frontend and add:
+Create a `.env.local` file in the **frontend** directory and add:
+```
 NEXT_PUBLIC_OPENWEATHERMAP_API_URL=your_openweather_api_key
+```
 
+4. **Start the Application**
 
-4️⃣ Start the Application
-Run the Backend
+**Run the Backend:**
+```bash
 cd backend
 npm start
+```
 
-Run the Frontend
+**Run the Frontend:**
+```bash
 cd frontend
 npm run dev
-Now, open your browser and visit http://localhost:3000 🚀
+```
 
-### Deployment:
-Frontend: Vercel [https://quad-b-assignment-alpha.vercel.app/auth/login]
-Database: MongoDB Atlas
+Now, open your browser and visit [http://localhost:3000](http://localhost:3000) 🚀
 
-## 🔗 API Endpoints  
-### 🛡️ Authentication API  
-| Method | Endpoint         | Description          |
-|--------|-----------------|----------------------|
-| POST | /api/auth/register | Register a new user |
-| POST | /api/auth/login    | Login and get JWT token |
+---
 
-### ✅ To-Do API  
-| Method  | Endpoint         | Description               |
-|---------|-----------------|---------------------------|
-| POST  | /api/todos    | Add a new To-Do task     |
-| GET   | /api/todos    | Fetch all To-Do tasks    |
-| DELETE| /api/todos/:id | Delete a specific To-Do task |
+## 🚀 Deployment
+
+- **Frontend:** Vercel - [Quad-B Assignment Deployment](https://quad-b-assignment-alpha.vercel.app/auth/login)  
+- **Database:** MongoDB Atlas
+
+---
+
+## 🔗 API Endpoints
+
+### 🛡️ Authentication API
+| Method | Endpoint | Description |
+|---------|------------|----------------|
+| **POST** | `/api/auth/register` | Register a new user |
+| **POST** | `/api/auth/login` | Login and get JWT token |
+
+### ✅ To-Do API
+| Method | Endpoint | Description |
+|---------|------------|----------------|
+| **POST** | `/api/todos` | Add a new To-Do task |
+| **GET** | `/api/todos` | Fetch all To-Do tasks |
+| **DELETE** | `/api/todos/:id` | Delete a specific To-Do task |
+
+---
+
+## 📞 Support
+If you face any issues or have suggestions, feel free to open an issue or reach out via GitHub. Happy Coding! 😊
 
